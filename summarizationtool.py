@@ -1,5 +1,9 @@
 # TEXT SUMMARIZATION TOOL USING NLP
 import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import sent_tokenize, word_tokenize
+from heapq import nlargest
+
 def summarize_text(text, num_sentences=2):
 
     # Tokenize sentences
